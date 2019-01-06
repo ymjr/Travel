@@ -38,7 +38,7 @@ export default {
         desc: '亲子游'
       }, {
         id: '0004',
-        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/ff/fdf170ee89594b02.png',
         desc: '长沙必游'
       }, {
         id: '0005',
@@ -66,13 +66,13 @@ export default {
   computed: {
     pageList () {
       function chunk (arr, size) {
-        var arr2 = [ ];
-        for (var i = 0; i < arr.length ; i = i + size) {
-          arr2.push(arr.slice(i ,i + size)) ;
+        var arr2 = []
+        for (var i = 0; i < arr.length; i = i + size) {
+          arr2.push(arr.slice(i, i + size))
         }
-        return arr2 ;
+        return arr2
       }
-      const arrayList = chunk( this.iconList , 8)
+      const arrayList = chunk(this.iconList, 8)
       return arrayList
     }
   }
@@ -90,30 +90,32 @@ export default {
     bottom: -2px;
     left: 0;
     width: 100%;
-  .icon
-    position:relative
-    float:left
-    width :25%
-    height :0
-    padding-bottom :25%
-    .icon-img
-      position: absolute
-      top :0
-      left :0
-      right :0
-      bottom : .44rem
-      overflow :hidden
-      text-align :center
-      box-sizing :border-box
-      padding-top :.2rem
-      .icon-img-content
-        height :100%
-    .icon-desc
-      position:absolute
-      left :0
-      right :0
-      bottom :0
-      line-height :.44rem
-      text-align :center
-      ellipsis()
+  .icons
+    margin-top :.1rem
+    .icon
+      position:relative
+      float:left
+      width :25%
+      height :0
+      padding-bottom :25%
+      .icon-img
+        position: absolute
+        top :0
+        left :0
+        right :0
+        bottom : .44rem
+        overflow :hidden
+        text-align :center
+        box-sizing :border-box
+        padding-top :.2rem
+        .icon-img-content
+          height :100%
+      .icon-desc
+        position:absolute
+        left :0
+        right :0
+        bottom :0
+        line-height :.44rem
+        text-align :center
+        ellipsis()
 </style>
