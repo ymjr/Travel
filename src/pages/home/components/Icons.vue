@@ -87,7 +87,7 @@ export default {
     height :0
     padding-bottom :54%
   .icons >>>.swiper-container-horizontal > .swiper-pagination-bullets
-    bottom: -2px;
+    bottom: .02rem;
     left: 0;
     width: 100%;
   .icon
