@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201403/10/df94368ff58ae7b12313077f6851b335.jpg_200x200_3fe1864e.jpg',
-        title: '大围山滑雪场',
-        desc: '湖南省长沙浏阳市大围山国家森林公园玉泉寺景区'
-      }, {
-        id: '002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/201403/07/fa3bace43953b4464b2251777579c147.jpg_200x200_b11a8b87.jpg',
-        title: '宁乡灰汤紫龙湾温泉度假区',
-        desc: '湖南省长沙市宁乡县灰汤镇宁南村'
-      }, {
-        id: '003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1501/73/736e2942826c2fb5.water.jpg_200x200_f130cc21.jpg',
-        title: '赤马湖瑞翔滑雪场',
-        desc: '湖南省浏阳市沙市镇长兴社区266号'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>
