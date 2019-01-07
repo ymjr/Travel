@@ -23,12 +23,12 @@ export default {
         pagination: '.swiper-pagination'
       },
       swiperList: [{
-        id:'0001',
-        imgUrl:'http://img1.qunarzz.com/piao/fusion/1812/d6/daa880b254940402.jpg_750x200_b114308a.jpg'
+        id: '0001',
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1812/d6/daa880b254940402.jpg_750x200_b114308a.jpg'
       },
-     {
-        id:'0002',
-        imgUrl:'http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg'
+      {
+        id: '0002',
+        imgUrl: 'http://img1.qunarzz.com/piao/fusion/1811/31/da037478f37cf202.jpg_750x200_fe28d396.jpg'
       }]
     }
   }
