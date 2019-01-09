@@ -1,8 +1,8 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-search></city-search>
-    <city-list :City="City" :hotCities="hotCities" :cities="cities" :letter="letter"></city-list>
+    <city-search :cities="cities"></city-search>
+    <city-list :hotCities="hotCities" :cities="cities" :letter="letter"></city-list>
     <city-alphabe :cities="cities" @change="handleLetterChange"></city-alphabe>
   </div>
 </template>
@@ -24,7 +24,6 @@ export default {
   },
   data () {
     return {
-      City: '',
       hotCities: [ ],
       cities: {},
       letter: ''
@@ -38,7 +37,6 @@ export default {
     getHomeInfoSucc (res) {
       res = res.data
       if (res.ret && res.data) {
-        this.City = res.data.city
         this.hotCities = res.data.hotCities
         this.cities = res.data.cities
       }
